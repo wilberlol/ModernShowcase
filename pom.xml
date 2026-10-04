@@ -2,10 +2,10 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>ModernShowcase</groupId>
   <artifactId>ModernShowcase</artifactId>
-  <version>1.4</version>
+  <version>1.7.2</version>
   	<properties>
-   	 <maven.compiler.source>1.8</maven.compiler.source>
-   	 <maven.compiler.target>1.8</maven.compiler.target>
+   	 <maven.compiler.source>21</maven.compiler.source>
+   	 <maven.compiler.target>21</maven.compiler.target>
  	</properties>
 	<repositories>
 		<!-- This adds the Spigot Maven repository to the build -->
@@ -42,9 +42,9 @@
 		</dependency>
 	
 		<dependency>
-		    <groupId>dev.folia</groupId>
-		    <artifactId>folia-api</artifactId>
-		    <version>1.20.1-R0.1-SNAPSHOT</version>
+		    <groupId>io.papermc.paper</groupId>
+		    <artifactId>paper-api</artifactId>
+		    <version>1.21.8-R0.1-SNAPSHOT</version>
 		    <scope>provided</scope>
 		</dependency>	
 		<dependency>
@@ -66,7 +66,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-shade-plugin</artifactId>
-				<version>3.2.4</version>
+				<version>3.5.3</version>
 				<executions>
 					<execution>
 						<phase>package</phase>
